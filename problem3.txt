@@ -1,0 +1,28 @@
+input = "aaabccdddda";
+
+function compressString(input){
+	
+  let outputArr = new Array(0);
+	let counter = 1;
+
+	for(let i = 0; i < input.length; i++){
+  	
+  	if( input[i] === input[i+1]){
+    	counter++;
+    }
+    else if (counter > 1)
+    {
+    	
+    	outputArr.push(counter);
+      outputArr.push(input[i]);
+      counter = 1;
+    }
+    else {
+    	outputArr.push(input[i]);
+    }
+  }
+  output = outputArr.join("");
+	return output;
+}
+
+console.log(compressString(input));

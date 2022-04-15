@@ -11,18 +11,16 @@ function removeDups(input){
   else {
   	noDups[`${input[0]}`] = true;
     outputArr.push(input[0]);
-    console.log( noDups["7"] );
   }
-  
   
   for(let i = 1; i < input.length; i++){
   	if(!noDups[`${input[i]}`]){
     	noDups[`${input[i]}`] = true;
-      console.log( noDups[`${i}`] );
     	outputArr.push(input[i]); 
     }
-    else
-  		console.log("there's a duplicate at " + i + " and were not gonna do anything");
+    else{
+    	//DO NOTHING
+    }
   }
 
 	return outputArr;

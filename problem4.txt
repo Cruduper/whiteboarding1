@@ -1,0 +1,23 @@
+let input = "copyright";
+
+function removeDups(input){
+	let noDups = {};
+  
+  if (!input)
+  {
+  	return true;
+  }	
+  
+  for(let i = 0; i < input.length; i++){
+  	if(!noDups[`${input[i]}`]){
+    	noDups[`${input[i]}`] = true;
+    }
+    else{
+    	return false
+    }
+  }
+
+	return true;
+}
+
+console.log( removeDups(input) );

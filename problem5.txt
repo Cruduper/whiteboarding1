@@ -1,0 +1,20 @@
+let input = [9, 2, 7, 35, 344, 1, 35, 34, 36, 88, 12];
+
+function bubbleSort(array) {
+  for (let i = 0; i < array.length - 1; i++) {
+    for (let j = 0; j < array.length - i - 1; j++) {
+
+      if (array[j] > array[j + 1]) {
+
+        let min = array[j + 1];
+        array[j + 1] = array[j];
+        array[j] = min;
+      }
+    }
+  }
+  return array;
+}
+
+console.log( bubbleSort(input) );
+
+
