@@ -1,0 +1,1 @@
+its 9:24 and i'm working on the first problem still because jsfiddle is not wanting to work. Might switch to a real VScode project to finish the rest of the problems?
