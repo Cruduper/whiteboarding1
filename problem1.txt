@@ -1,0 +1,37 @@
+let input = "Jasmine Ann Jones"
+
+function spaceReplace(inp){
+	let inpArr = inp.split("");
+	for(let i = 0; i < inpArr.length; i++){
+  	
+    if( inpArr[i] === " "){
+    	 inpArr.splice(i, 1, "%");
+    	 inpArr.splice(i+1, 0, "2");
+    	 inpArr.splice(i+2, 0, "0"); 
+    }
+  }
+
+	return inpArr.join("");
+}
+
+
+function spaceReplace2(inp){
+  let outArr = new Array(0);
+  
+	for(let i = 0; i < inp.length; i++){
+  	
+    if( inp[i] === " "){
+			outArr.push("%");
+      outArr.push("2");
+      outArr.push("0");
+    }
+    else	{
+    	outArr.push(inp[i]);
+    }
+  }
+
+	return outArr.join("");
+}
+
+console.log(spaceReplace(input));
+console.log(spaceReplace2(input));
