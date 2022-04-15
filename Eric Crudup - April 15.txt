@@ -5,3 +5,5 @@ its 10:31. I switched to the chrome console instead of jsfiddle and everything i
 its 11:43. I'm about done with both 3 and 4, it's time for lunch. 
 
 it's 1:17, after lunch. Finished all 5 problems. 
+
+it's 2:31 i'm trying to do problems recursively.
